@@ -1,7 +1,25 @@
 body {
   text-align: center;
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  justify-content: center;
+  background-image: url(../images/the_hall_of_planetarium.jpg);
+  background-size: cover;
+  /* background: linear-gradient(to right, #414345, #232526); */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  /* text-shadow: 2px 2px white; */
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
+  opacity: 0.7;
+}
+
+input[type="submit"]:hover {
   color: darkgoldenrod;
+}
+
+textarea {
+  opacity: 0.7;
 }
