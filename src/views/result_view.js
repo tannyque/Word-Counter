@@ -13,7 +13,7 @@ ResultView.prototype.bindEvents = function () {
 
 ResultView.prototype.updateView = function (result) {
   const resultElement = document.querySelector('#result');
-  resultElement.textContent = `Your word count is ${result}.`
+  resultElement.textContent = `Your word count is ${result}`
 };
 
 module.exports = ResultView;

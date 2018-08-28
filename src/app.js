@@ -3,9 +3,8 @@ const WordCounter = require('./models/word_counter.js');
 const ResultView = require('./views/result_view.js')
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const form = document.querySelector('#wordcounter-form');
-  // form.addEventListener('submit', handleFormSubmit);
 
+  // Create new instance
   const inputView = new InputView();
   inputView.bindEvents();
 
@@ -15,7 +14,3 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultView = new ResultView();
   resultView.bindEvents();
 });
-//
-// const handleFormSubmit = function (event) {
-//   event.preventDefault();
-// };

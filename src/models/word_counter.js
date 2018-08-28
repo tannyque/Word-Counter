@@ -5,15 +5,18 @@ const WordCounter = function () {
 };
 
 WordCounter.prototype.bindEvents = function () {
-  PubSub.subscribe("InputView:words-inputted", (event) => {
-    const inputtedWords = event.detail;
-    const result = this.wordCount(inputtedWords);
+  PubSub.subscribe("InputView:text-inputted", (event) => {
+    const inputtedText = event.detail;
+    const result = this.wordCount(inputtedText);
+    // Logging the word count
+    console.log(result);
     PubSub.publish("WordCounter:result", result);
   })
 };
 
-WordCounter.prototype.wordCount = function (words) {
-  return words.split(" ").length;
+WordCounter.prototype.wordCount = function (text) {
+  // return text.split(" ").length;
+  return text.trim().split(' ').length;
 };
 
 module.exports = WordCounter;
