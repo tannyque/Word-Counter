@@ -22,7 +22,7 @@ Use webpack to bundle your JavaScript files.
 You will need to set-up webpack in your application:
 
 1. Initialise npm - `npm init`
-2. Install 'webpack' and 'webpack-cli' - `npm install webpack webpack-cli`
+2. Install 'webpack' and 'webpack-cli' - `npm install -D webpack webpack-cli`
 3. Create a webpack config file - webpack.config.js
 4. Add the configuration details to the config file
 5. Add a script to the package.json to run webpack in watch mode - `"build": "webpack -w"`
